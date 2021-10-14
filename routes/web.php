@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','App\Http\Controllers\ProductoController@index');
 Route::get('/productos','App\Http\Controllers\ProductoController@create')->name('productos.create');
 Route::post('/productos','App\Http\Controllers\ProductoController@store')->name('productos.store');
+Route::delete('/productos','App\Http\Controllers\ProductoController@destroy')->name('producto.destroy');
 
 //CLIENTE
 Route::get('/clientes','App\Http\Controllers\ClienteController@index');
